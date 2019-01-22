@@ -1,4 +1,4 @@
-# vueSys
+﻿# vueSys
 vuecli+element-ui的系统基础框架
 
 # 安装vue-cli步骤
@@ -41,5 +41,7 @@ Setup e2e tests with Nightwatch(Y/n)? 是否安装e2e测试
  npm install -g cnpm --registry=https://registry.npm.taobao.org
 
  然后使用cnpm来安装 )
+
+4、如果要打包后本地读取资源，修改config/index.js中build的assetsPublicPath值为：'./'
 
 
