@@ -42,6 +42,16 @@ Setup e2e tests with Nightwatch(Y/n)? 是否安装e2e测试
 
  然后使用cnpm来安装 )
 
+没有安装element-ui的项目输入npm install element-ui 进行安装
+
 4、如果要打包后本地读取资源，修改config/index.js中build的assetsPublicPath值为：'./'
 
+5、项目全局引用element-ui：
 
+在main.js文件引用element-ui，添加下面引用代码，
+
+import ElementUI from 'element-ui'
+
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
