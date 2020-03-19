@@ -55,3 +55,12 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUI)
+
+6、在build目录webpack.dev.conf.js中，在devServer下增加一个配置：disableHostCheck: true。防止开发环境dns报错
+
+# 在页面应用scss
+1、vue视图的style中添加：lang="scss"
+
+2、安装sass-loader和node-sass。其中sass-loader最新版本可能会有冲突，可指定低版本安装，如7.3.1
+
+node-sass在npm中可能会安装失败，可切cnpm进行安装
